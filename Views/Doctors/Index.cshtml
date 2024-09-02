@@ -1,0 +1,50 @@
+@model IEnumerable<HealthcareManagementSystem.Models.Doctor>
+
+@{
+  ViewData["Title"] = "Doctors";
+  var doctorId = Context.Session.GetInt32("DoctorId");
+}
+
+<h1>Doctors</h1>
+<a asp-action="PatientsList" class="btn btn-primary mb-3">View All Patients</a>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+      <th>@Html.DisplayNameFor(model => model.LastName)</th>
+      <th>@Html.DisplayNameFor(model => model.Specialization)</th>
+      <th>@Html.DisplayNameFor(model => model.PhoneNumber)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+      <tr>
+        <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+        <td>@Html.DisplayFor(modelItem => item.LastName)</td>
+        <td>@Html.DisplayFor(modelItem => item.Specialization)</td>
+        <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+        <td>
+          <a asp-action="Edit" asp-route-id="@item.DoctorId" class="btn btn-warning">Edit</a> |
+          <a asp-action="Details" asp-route-id="@item.DoctorId" class="btn btn-info">Details</a> |
+          <a asp-action="Delete" asp-route-id="@item.DoctorId" class="btn btn-danger">Delete</a>
+        </td>
+        <td>
+          <a asp-action="AddAppointment" asp-route-id="@item.DoctorId" class="btn btn-success">Add Appointment</a>
+        </td>
+        <td>
+          <a asp-action="Locations" asp-route-id="@item.DoctorId" class="btn btn-primary">View Locations</a>
+        </td>
+        <td>
+          <a asp-action="Appointments" asp-route-id="@item.DoctorId" class="btn btn-primary">View Appointments</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

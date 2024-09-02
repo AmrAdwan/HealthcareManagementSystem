@@ -1,0 +1,4 @@
+@model HealthcareManagementSystem.Models.Patient
+
+<a asp-action="EditPatient" asp-route-id="@Model.PatientId" asp-controller="Doctors" class="btn btn-warning">Edit</a> |
+<a asp-action="DeletePatient" asp-route-id="@Model.PatientId" asp-controller="Doctors" class="btn btn-danger">Delete</a>

@@ -1,0 +1,56 @@
+﻿@{
+  ViewData["Title"] = "Healthcare Management System";
+  var patientId = Context.Session.GetInt32("PatientId");
+  var doctorId = Context.Session.GetInt32("DoctorId");
+}
+
+<div class="jumbotron text-center">
+  <h1 class="display-4">Welcome to the Healthcare Management System</h1>
+  <p class="lead">Efficiently manage patient records, appointments, prescriptions, billing, and more.</p>
+  <hr class="my-4">
+  <p>Our system provides a comprehensive solution for healthcare providers to streamline their administrative and
+    clinical processes.</p>
+  @if (!patientId.HasValue && !doctorId.HasValue)
+  {
+    <a class="btn btn-primary btn-lg" href="@Url.Action("Login", "Patients")" role="button">Login Patients</a>
+    <a class="btn btn-secondary btn-lg" href="@Url.Action("Login", "Doctors")" role="button">Login Doctors</a>
+  }
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Patient Management</h3>
+      <p>Maintain detailed patient records including personal information, medical history, and billing details.
+        Easily add, edit, and view patient information.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Appointment Scheduling</h3>
+      <p>Schedule and manage appointments between patients and doctors. Avoid conflicts with our real-time
+        scheduling system and ensure optimal use of resources.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Billing & Invoicing</h3>
+      <p>Automate billing processes and generate invoices for patient services. Keep track of payments and
+        outstanding balances with our integrated billing module.</p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <h3>Doctor Management</h3>
+      <p>Manage doctor profiles including specializations, contact information, and availability. Ensure accurate
+        scheduling and efficient use of medical professionals.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Medical Records</h3>
+      <p>Keep detailed and secure medical records for each patient. Ensure data integrity and accessibility for
+        better patient care and compliance with healthcare standards.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Location Management</h3>
+      <p>Manage the locations where your healthcare services are provided. Assign doctors to different locations
+        and ensure no conflicts in their schedules.</p>
+    </div>
+  </div>
+</div>

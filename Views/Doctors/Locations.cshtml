@@ -1,0 +1,36 @@
+@model HealthcareManagementSystem.Models.Doctor
+
+@{
+  ViewData["Title"] = "Locations for " + Model.FirstName + " " + Model.LastName;
+}
+
+<h1>Locations for @Model.FirstName @Model.LastName</h1>
+
+<p>
+  <a asp-action="AddLocation" asp-route-id="@Model.DoctorId" class="btn btn-primary">Add Location</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var location in Model.Locations)
+    {
+      <tr>
+        <td>@location.Name</td>
+        <td>
+          <a asp-action="EditLocation" asp-route-id="@location.LocationId" class="btn btn-warning">Edit</a> |
+          <a asp-action="DeleteLocation" asp-route-id="@location.LocationId" class="btn btn-danger">Delete</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<div>
+  <input type="hidden" asp-for="DoctorId" />
+  <a asp-action="Index" asp-route-doctorId="@Model.DoctorId" class="btn btn-secondary">Back to Doctor Info</a>
+</div>

@@ -1,0 +1,37 @@
+@model HealthcareManagementSystem.Models.Patient
+
+@{
+  ViewData["Title"] = "Billings for " + Model.FirstName + " " + Model.LastName;
+}
+
+<h1>Billings for @Model.FirstName @Model.LastName</h1>
+
+<p>
+  <a asp-action="AddBilling" asp-route-id="@Model.PatientId" class="btn btn-primary">Add New Billing</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Amount</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var billing in Model.Billings)
+    {
+      <tr>
+        <td>@billing.Date.ToString("dd-MM-yyyy")</td>
+        <td>@billing.Amount</td>
+        <td>
+          <a asp-action="EditBilling" asp-route-id="@billing.BillingId" class="btn btn-warning">Edit</a> |
+          <a asp-action="DeleteBilling" asp-route-id="@billing.BillingId" class="btn btn-danger">Delete</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+<div>
+  <input type="hidden" asp-for="PatientId" />
+  <a asp-action="Index" asp-route-patientId="@Model.PatientId" class="btn btn-secondary">Back to Patient Info</a>
+</div>

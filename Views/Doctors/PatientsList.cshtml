@@ -1,0 +1,60 @@
+@model IEnumerable<HealthcareManagementSystem.Models.Patient>
+
+@{
+  ViewData["Title"] = "Patients List";
+  var isAdmin = Context.Session.GetString("DoctorRights") == "Admin";
+  var doctorId = Context.Session.GetInt32("DoctorId"); // Retrieve DoctorId from session
+}
+
+<h1>Patients List</h1>
+@if (isAdmin)
+{
+  <p>
+  <a asp-action="CreatePatient" class="btn btn-primary">Create New</a>
+</p>
+}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+      <th>@Html.DisplayNameFor(model => model.LastName)</th>
+      <th>@Html.DisplayNameFor(model => model.DateOfBirth)</th>
+      <th>@Html.DisplayNameFor(model => model.Gender)</th>
+      <th>@Html.DisplayNameFor(model => model.Address)</th>
+      <th>@Html.DisplayNameFor(model => model.PhoneNumber)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+      <tr>
+        <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+        <td>@Html.DisplayFor(modelItem => item.LastName)</td>
+        <td>@item.DateOfBirth.ToString("dd-MM-yyyy")</td>
+        <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+        <td>@Html.DisplayFor(modelItem => item.Address)</td>
+        <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+        <td>
+          @if (isAdmin)
+          {
+            @await Html.PartialAsync("_AdminActions", item)
+          }
+          else
+          {
+            @await Html.PartialAsync("_UserActions", item)
+          }
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<div>
+  @if (doctorId.HasValue)
+  {
+    <input type="hidden" name="DoctorId" value="@doctorId" />
+    <a asp-action="Index" asp-route-doctorId="@doctorId" class="btn btn-secondary">Back to Doctor Info</a>
+  }
+</div>

@@ -1,0 +1,35 @@
+@model HealthcareManagementSystem.Models.Location
+
+@{
+  ViewData["Title"] = "Edit Location";
+}
+
+<h1>Edit Location</h1>
+
+<h4>Location</h4>
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <form asp-action="EditLocation">
+      <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+      </div>
+      <input type="hidden" asp-for="DoctorId" />
+      <input type="hidden" asp-for="LocationId" />
+      <div class="form-group">
+        <br>
+        <input type="submit" value="Save" class="btn btn-primary" /> |
+        <a asp-action="Locations" asp-route-id="@Model.DoctorId" class="btn btn-secondary">Cancel</a> |
+        <a asp-action="DeleteLocation" asp-route-id="@Model.LocationId" class="btn btn-danger">Delete</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+@section Scripts {
+  @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+  }
+}

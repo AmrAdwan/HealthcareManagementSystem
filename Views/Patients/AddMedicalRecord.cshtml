@@ -1,0 +1,39 @@
+@model HealthcareManagementSystem.Models.MedicalRecord
+
+@{
+  ViewData["Title"] = "Add Medical Record";
+}
+
+<h1>Add Medical Record</h1>
+
+<h4>Medical Record</h4>
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <form asp-action="AddMedicalRecord">
+      <div class="form-group">
+        <label asp-for="Date" class="control-label"></label>
+        <input asp-for="Date" class="form-control" type="date-local" type="date" 
+          value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+      </div>
+      <input type="hidden" asp-for="PatientId" />
+      <div class="form-group">
+        <br>
+        <input type="submit" value="Add" class="btn btn-primary" />
+        <a asp-action="MedicalRecords" asp-route-id="@Model.PatientId" class="btn btn-secondary">Back to Medical Records List</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+@section Scripts {
+  @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+  }
+}

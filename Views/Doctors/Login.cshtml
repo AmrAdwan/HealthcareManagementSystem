@@ -1,0 +1,50 @@
+@model HealthcareManagementSystem.Models.Doctor
+
+@{
+  ViewData["Title"] = "Login Doctor";
+}
+
+<h1>Login</h1>
+
+<h4>Doctor</h4>
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <form asp-action="Login">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+      <div class="form-group">
+        <label asp-for="FirstName" class="control-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="LastName" class="control-label"></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="Password" class="control-label"></label>
+        <input asp-for="Password" class="form-control" type="password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <br>
+        <input type="submit" value="Login" class="btn btn-success" /> |
+        <a class="btn btn-dark" href="@Url.Action("Index", "Home")" role="button">Back to Home Page</a>
+      </div>
+    </form>
+    <br>
+  </div>
+  <hr>
+  <p>
+    If you have no account please create an account!
+    <hr>
+    <a asp-action="Create" class="btn btn-primary">Create New Account</a>
+  </p>
+</div>
+
+@section Scripts {
+  @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+  }
+}

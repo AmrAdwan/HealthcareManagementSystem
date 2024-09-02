@@ -1,0 +1,37 @@
+@model HealthcareManagementSystem.Models.Patient
+
+@{
+  ViewData["Title"] = "Medical Records for " + Model.FirstName + " " + Model.LastName;
+}
+
+<h1>Medical Records for @Model.FirstName @Model.LastName</h1>
+
+<p>
+  <a asp-action="AddMedicalRecord" asp-route-id="@Model.PatientId" class="btn btn-primary">Add New Medical Record</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var record in Model.MedicalRecords)
+    {
+      <tr>
+        <td>@record.Date.ToString("dd-MM-yyyy")</td>
+        <td>@record.Description</td>
+        <td>
+          <a asp-action="EditMedicalRecord" asp-route-id="@record.MedicalRecordId" class="btn btn-warning">Edit</a> |
+          <a asp-action="DeleteMedicalRecord" asp-route-id="@record.MedicalRecordId" class="btn btn-danger">Delete</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+<div>
+  <input type="hidden" asp-for="PatientId" />
+  <a asp-action="Index" asp-route-patientId="@Model.PatientId" class="btn btn-secondary">Back to Patient Info</a>
+</div>

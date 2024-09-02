@@ -1,0 +1,195 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HealthcareManagementSystem
+build_property.RootNamespace = HealthcareManagementSystem
+build_property.ProjectDir = /Users/amradwan/Desktop/educom/C#/HealthcareManagementSystem/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/amradwan/Desktop/educom/C#/HealthcareManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/AddAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9BZGRBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/AddLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9BZGRMb2NhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Appointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9BcHBvaW50bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/CreatePatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9DcmVhdGVQYXRpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/DeleteAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9EZWxldGVBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/DeleteLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9EZWxldGVMb2NhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/DeletePatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9EZWxldGVQYXRpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/EditAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9FZGl0QXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/EditLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9FZGl0TG9jYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/EditPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9FZGl0UGF0aWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Locations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9Mb2NhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Doctors/PatientsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9ycy9QYXRpZW50c0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/AddBilling.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvQWRkQmlsbGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/AddMedicalRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvQWRkTWVkaWNhbFJlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Appointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvQXBwb2ludG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Billings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvQmlsbGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/DeleteBilling.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvRGVsZXRlQmlsbGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/DeleteMedicalRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvRGVsZXRlTWVkaWNhbFJlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/EditBilling.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvRWRpdEJpbGxpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/EditMedicalRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvRWRpdE1lZGljYWxSZWNvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Patients/MedicalRecords.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudHMvTWVkaWNhbFJlY29yZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Shared/_AdminActions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BZG1pbkFjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Shared/_UserActions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Vc2VyQWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amradwan/Desktop/educom/C\#/HealthcareManagementSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-slqdxb7c2z

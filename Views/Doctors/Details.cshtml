@@ -1,0 +1,43 @@
+@model HealthcareManagementSystem.Models.Doctor
+
+@{
+  ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+  <h4>Doctor</h4>
+  <hr />
+  <dl class="row">
+    <dt class="col-sm-2">
+      @Html.DisplayNameFor(model => model.FirstName)
+    </dt>
+    <dd class="col-sm-10">
+      @Html.DisplayFor(model => model.FirstName)
+    </dd>
+    <dt class="col-sm-2">
+      @Html.DisplayNameFor(model => model.LastName)
+    </dt>
+    <dd class="col-sm-10">
+      @Html.DisplayFor(model => model.LastName)
+    </dd>
+    <dt class="col-sm-2">
+      @Html.DisplayNameFor(model => model.Specialization)
+    </dt>
+    <dd class="col-sm-10">
+      @Html.DisplayFor(model => model.Specialization)
+    </dd>
+    <dt class="col-sm-2">
+      @Html.DisplayNameFor(model => model.PhoneNumber)
+    </dt>
+    <dd class="col-sm-10">
+      @Html.DisplayFor(model => model.PhoneNumber)
+    </dd>
+  </dl>
+</div>
+<div>
+  <input type="hidden" asp-for="DoctorId" />
+  <a asp-action="Edit" asp-route-id="@Model.DoctorId" class="btn btn-warning">Edit</a> |
+  <a asp-action="Index" asp-route-doctorId="@Model.DoctorId" class="btn btn-secondary">Back to Doctor Info</a>
+</div>
